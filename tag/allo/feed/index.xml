@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Allo Archives - Rutvik Bhatt</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Technologist and Product Manager</description>
+	<lastBuildDate>Mon, 10 Aug 2020 19:57:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
+
+<image>
+	<url>./../../../wp-content/uploads/2020/06/cropped-Rbg-favicon-32x32.png</url>
+	<title>Allo Archives - Rutvik Bhatt</title>
+	<link>./../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">178776205</site>	<item>
+		<title>Google Allo : Is it a new way to hack into people’s life?</title>
+		<link>./../../../products/google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=google-allo-is-it-a-new-way-to-hack-into-peoples-life</link>
+					<comments>./../../../products/google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[iamrutvik]]></dc:creator>
+		<pubDate>Thu, 22 Sep 2016 19:21:00 +0000</pubDate>
+				<category><![CDATA[Products]]></category>
+		<category><![CDATA[Allo]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Google Allo]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=4985</guid>
+
+					<description><![CDATA[<p>So finally, after months of waiting, the most intelligent chat app was launched yesterday. It brings a fun to chat but also brings some concerns along with it, related to privacy, especially when google is known to keep track of everything you do in your life. It has all fancy features powered by AI, like...</p>
+<p>The post <a rel="nofollow" href="./../../../products/google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html">Google Allo : Is it a new way to hack into people’s life?</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="https://miro.medium.com/max/1280/1*jnEzaV3oAwF18Winu9ikKg.jpeg" alt="Google Allo : Is it a new way to hack into people’s life?" width="640" height="533"/><figcaption>A ‘Smart’ Chat App, Allo, launched yesterday</figcaption></figure></div>
+
+
+
+<p>So finally, after months of waiting, the most intelligent chat app was launched yesterday. It brings a fun to chat but also brings some concerns along with it, related to privacy, especially when google is known to keep track of everything you do in your life.</p>
+
+
+
+<p>It has all fancy features powered by AI, like Google assistant to serve you what ever you ask and It will get better and better with time.</p>
+
+
+
+<p>When Allo was announced at Google’s I/O conference earlier this year, the messaging app was presented as a step forward for privacy. Alongside the end-to-end-encrypted Incognito Mode, the Allo team talked about bold new message retention practices, storing messages only transiently rather than indefinitely.</p>
+
+
+
+<p>But with the release of the app yesterday, Google is backing off on some of those features.</p>
+
+
+
+<p>The version of Allo rolling out today will store all non-incognito messages by default — a clear change from Google’s earlier statements that the app would only store messages transiently and in non-identifiable form. The records will now persist until the user actively deletes them, giving Google default access to a full history of conversations in the app. Users can also avoid the logging by using Allo’s Incognito Mode, which is still fully end-to-end encrypted and unchanged from the initial announcement.</p>
+
+
+
+<blockquote class="wp-block-quote"><p>A change to improve the Allo assistant — Google</p></blockquote>
+
+
+
+<p>Like Hangouts and Gmail, Allo messages will still be encrypted between the device and Google servers, and stored on servers using encryption that leaves the messages accessible to Google’s algorithms.</p>
+
+
+
+<p>According to Google, the change was made to improve Allo’s smart reply feature, which generates suggested responses to a given conversation. Like most machine learning systems, the smart replies work better with more data. As the Allo team tested those replies, they decided the performance boost from permanently stored messages was worth giving up privacy benefits of transient storage.</p>
+
+
+
+<p>The decision will also have significant consequences for law enforcement access to Allo messages. By default, Allo messages will now be accessible to lawful requests, similar to message data in Gmail and Hangouts and location data collected by Android. In the past, Google legal officers have stated that subpoenas are not sufficient to obtain that information, stating “we believe a warrant is required by the Fourth Amendment to the U.S. Constitution” for access to private information in a Google account.</p>
+
+
+
+<p>The messages might not be there if the user had previously deleted them, or if the conversations took place in Incognito Mode — but in most cases, they will be. That leaves Google with much less danger of the kind of legal showdown Apple faced in San Bernardino and WhatsApp currently faces in Brazil.</p>
+
+
+
+<p>The ex-NSA contractor, Snowden, posted a series of Tweets to warn everyone away from the chat app, which he says will “<strong>record every message you ever send and make it available to police upon request</strong>”.</p>
+
+
+
+<figure><iframe src="https://cdn.embedly.com/widgets/media.html?type=text%2Fhtml&amp;key=d04bfffea46d4aeda930ec88cc64b87c&amp;schema=twitter&amp;url=https%3A//twitter.com/snowden/status/778588715736260608&amp;image=https%3A//i.embed.ly/1/image%3Furl%3Dhttps%253A%252F%252Fpbs.twimg.com%252Fprofile_images%252F648888480974508032%252F66_cUYfj_bigger.jpg%26key%3D4fce0568f2ce49e8b54624ef71a8a5bd" allowfullscreen="" height="185" width="500"></iframe></figure>
+
+
+
+<figure><iframe src="https://medium.com/media/b450e333943ab22955fc32cf170643a3" allowfullscreen="" height="0" width="0"></iframe><figcaption>Snowden warned users as soon as Allo launched without its privacy features.</figcaption></figure>
+
+
+
+<figure><iframe src="https://medium.com/media/c5842c4814d33bfd2d90e8517f3b9e49" allowfullscreen="" height="0" width="0"></iframe><figcaption>A user’s reaction on privacy issue in Google Allo</figcaption></figure>
+
+
+
+<p>Though Google has already updated its Terms &amp; Conditions and clearly mentioned the change, But it would be much of a show how Google responds to these tweets.</p>
+<p>The post <a rel="nofollow" href="./../../../products/google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html">Google Allo : Is it a new way to hack into people’s life?</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../products/google-allo-is-it-a-new-way-to-hack-into-peoples-life/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">4985</post-id>	</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 46/48 objects using disk
+Page Caching using disk: enhanced 
+Lazy Loading (feed)
+Minified using disk
+
+Served from: rutvikbhatt.com @ 2022-07-25 23:46:25 by W3 Total Cache
+-->

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>agile estimation Archives - Rutvik Bhatt</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Technologist and Engineering Leader</description>
+	<lastBuildDate>Sun, 10 Sep 2023 22:37:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.3.1</generator>
+
+<image>
+	<url>https://i0.wp.com/rutvikbhatt.com/wp-content/uploads/2020/06/cropped-Rbg-favicon.png?fit=32%2C32&#038;ssl=1</url>
+	<title>agile estimation Archives - Rutvik Bhatt</title>
+	<link>./../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">178776205</site>	<item>
+		<title>Agile Estimation &#8211; Demystifying Story Points In Most Easiest Way</title>
+		<link>./../../../agile-estimation-demystifying-story-points-in-most-easiest-way/index.html?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=agile-estimation-demystifying-story-points-in-most-easiest-way</link>
+					<comments>./../../../agile-estimation-demystifying-story-points-in-most-easiest-way/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Rutvik Bhatt]]></dc:creator>
+		<pubDate>Tue, 26 Jul 2022 12:00:29 +0000</pubDate>
+				<category><![CDATA[Agile]]></category>
+		<category><![CDATA[agile]]></category>
+		<category><![CDATA[agile estimation]]></category>
+		<category><![CDATA[story points]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=5088</guid>
+
+					<description><![CDATA[<p>What are Agile Story points? Story points in Agile represent 3 important factors &#8211;&#160;work complexity, the amount of work, and risk or uncertainty. It&#8217;s just not about the clock. How will we do it? I mostly try thus 4-step approach to stream line the mindset of engineers in the team. Yes, of-course, it&#8217;s all about...</p>
+<p>The post <a rel="nofollow" href="./../../../agile-estimation-demystifying-story-points-in-most-easiest-way/index.html">Agile Estimation &#8211; Demystifying Story Points In Most Easiest Way</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p></p>
+
+
+
+<h3 class="wp-block-heading" id="ListingXPEstimation-Whatisit?">What are Agile Story points?</h3>
+
+
+
+<blockquote class="wp-block-quote">
+<p>Story points in Agile represent 3 important factors &#8211;&nbsp;<strong>work complexity, the amount of work, and risk or uncertainty.</strong></p>
+<cite>It&#8217;s just not about the clock.</cite></blockquote>
+
+
+
+<ul>
+<li>Story points in Agile are units of <a href="https://www.atlassian.com/agile/project-management/estimation">measure for expressing an estimate</a> of the overall effort (!= time!!!) required to fully implement a product backlog item or any other piece of work.&nbsp;</li>
+
+
+
+<li>When the development team conducts an estimation, it is recommended to abandon the traditional “human-day” assessment method, using the point of the story point, We use Fibonacci number (1, 2, 3, 5, 8, 13, 21…) to estimate the story point</li>
+
+
+
+<li>It should represent 3 important factors &#8211;&nbsp;<strong>work complexity, the amount of work, and risk or uncertainty.</strong></li>
+
+
+
+<li>It’s a relative estimation, not absolute, meaning that we should not only consider the time factor while estimating in Agile.</li>
+
+
+
+<li>Agile Story points are coarse grained , relative measures of a raw effort and size. An item worth 1 story point is half of the size of an item worth 2 points. An item sized as 3 points requires as much effort as an item with one point and an item with 2 points added together!</li>
+
+
+
+<li>Relative measures take advantage of the fact that size itself is relative: the semantics of big and small depend on our reference point!</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="ListingXPEstimation-Howwillwedoit?">How will we do it?</h3>
+
+
+
+<p>I mostly try thus 4-step approach to stream line the mindset of engineers in the team. Yes, of-course, it&#8217;s all about the mind set. Its never a right answer, but when you do this repeatedly, your team will get better at estimating the effort. </p>
+
+
+
+<h4 class="wp-block-heading" id="ListingXPEstimation-Step1-ReferenceStories">Step 1 &#8211; Reference Stories</h4>
+
+
+
+<ul>
+<li>Some sample stories that could represent a few of the first Fibonacci numbers like 1,2,3, and 5. We only want to keep it upto 5, so that no story or task would be too large as 8. It will promote culture of breaking down tasks to granular piece of work</li>
+
+
+
+<li>Use it for reference in first few estimation, eventually you won’t need as you would be more comfortable with reference points</li>
+</ul>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Story Points</th><th>Reference&nbsp;Functional/non Function Requirement</th></tr></thead><tbody><tr><td>0.5</td><td>Change configuration in app config, Deprecating feature flags</td></tr><tr><td>1</td><td>Minor UI changes, Adding a feature flag in one place or adding some new fields and parsing them in API contract, IaaS changes</td></tr><tr><td>2</td><td>Implement some UI changes, Modifying &amp; Implementing API contracts</td></tr><tr><td>3</td><td>Implement complex UI display, Adding a new API endpoint</td></tr><tr><td>5</td><td>New Features broken down to smaller pieces of work</td></tr></tbody></table><figcaption class="wp-element-caption">Table 1: Reference stories</figcaption></figure>
+
+
+
+<h4 class="wp-block-heading" id="ListingXPEstimation-Step2-ApplyCheatSheet">Step 2 &#8211; Apply Cheat Sheet</h4>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th><strong>Uncertainty</strong></th><th><strong>Complexity</strong></th><th><strong>Effort</strong></th><th><strong>Points</strong></th></tr></thead><tbody><tr><td>Small</td><td>Small</td><td>Small</td><td>1</td></tr><tr><td>Small</td><td>Small</td><td>Medium</td><td>2</td></tr><tr><td>Small</td><td>Small</td><td>Large</td><td>5</td></tr><tr><td>Small</td><td>Medium</td><td>Small</td><td>2</td></tr><tr><td>Small</td><td>Medium</td><td>Medium</td><td>3</td></tr><tr><td>Small</td><td>Medium</td><td>Large</td><td>5</td></tr><tr><td>Small</td><td>Large</td><td>Small</td><td>3</td></tr><tr><td>Small</td><td>Large</td><td>Large</td><td>5</td></tr><tr><td>Small</td><td>Large</td><td>Large</td><td>8</td></tr><tr><td>Medium</td><td>Small</td><td>Small</td><td>3</td></tr><tr><td>Medium</td><td>Small</td><td>Medium</td><td>5</td></tr><tr><td>Medium</td><td>Small</td><td>Large</td><td>8</td></tr><tr><td>Medium</td><td>Medium</td><td>Small</td><td>5</td></tr><tr><td>Medium</td><td>Medium</td><td>Medium</td><td>5</td></tr><tr><td>Medium</td><td>Medium</td><td>Large</td><td>8</td></tr><tr><td>Medium</td><td>Large</td><td>Small</td><td>5</td></tr><tr><td>Medium</td><td>Large</td><td>Medium</td><td>8</td></tr><tr><td>Large</td><td>Medium</td><td>Small</td><td>8</td></tr><tr><td>Large</td><td>Medium</td><td>Medium</td><td>8</td></tr><tr><td>Large</td><td>Medium</td><td>Large</td><td>13</td></tr><tr><td>Large</td><td>Large</td><td>Small</td><td>8</td></tr><tr><td>Large</td><td>Large</td><td>Medium</td><td>13</td></tr><tr><td>Large</td><td>Large</td><td>Large</td><td>13</td></tr></tbody></table><figcaption class="wp-element-caption">Table 2 : Cheat sheet</figcaption></figure>
+
+
+
+<h4 class="wp-block-heading" id="ListingXPEstimation-Step3-Triangulation">Step 3 &#8211; Triangulation</h4>
+
+
+
+<p>Triangulation is checking not only a reference of the same number but the two around it. For instance, if you consider an item to be a 5, get a 3 and an 8 and see if it really is in between those.</p>
+
+
+
+<h4 class="wp-block-heading" id="ListingXPEstimation-Step4-PlanningPoker">Step 4 &#8211; Planning Poker</h4>
+
+
+
+<p><a href="https://www.atlassian.com/blog/agile/planning-poker-sane-healthy">Planning poker</a> is a common practice across the many tech companies. The team will take an item from the backlog, discuss it briefly, and each member will mentally formulate an estimate. Then everyone shares the number one after another that reflects their estimate. If everyone is in agreement, great! If not, take some time (but not too much time–just a couple minutes) to understand the rationale behind different estimates.</p>
+
+
+
+<p>When a team member is justifying his/her own estimation, use Step 1’s reference points and step 2’s cheat sheet to explain rationale behind certain estimation.&nbsp;There are many <a href="https://marketplace.atlassian.com/apps/1212495/planning-poker?hosting=cloud&amp;tab=overview">planning poker tools</a> available on the internet. Since many teams are now remotely working, using the zoom/teams/Google Meet Chat function, you don&#8217;t have to introduce another tool just for this. </p>
+
+
+
+<h5 class="wp-block-heading" id="ListingXPEstimation-HowtodoPlanningPoker?">How to do Planning Poker?</h5>
+
+
+
+<ol>
+<li>Post proper understanding of task on what exactly needs to be done, Everybody types their vote into the zoom chat and on the count of 0 everybody presses enter</li>
+
+
+
+<li>The team members with the highest and lowest estimate start right away sharing their ideas/reasoning behind their estimate (everybody else can add&nbsp; their opinion as well, of course)</li>
+
+
+
+<li>Post short conversation, We will rerun the vote and usually the estimates will be much more aligned (also comparing to reference stories might be a valuable tool)</li>
+</ol>
+
+
+
+<h6 class="wp-block-heading">Some other agreements you can have during Planning poker:</h6>
+
+
+
+<ol>
+<li>If there’s an disagreement after second vote, We will go with the higher estimation (rather under- than over-commit in the beginning)</li>
+
+
+
+<li>After each voting round, somebody puts a “separator line” into the chat (can be just 3-5 “–” or something, just to have visual break between the votes)</li>
+</ol>
+
+
+
+<p>The fun comes from observing who will be the first when the count-down is at 0 or also nudging the one who might be late with the vote (potentially trying to get a sneak peek of the others&#8217; votes). A big advantage (compared to using 5 fingers or planning poker cards) is that the votes stay visible &#8211; so it is easier to drive the conversation (e.g. between highest and lowest vote) We use Zoom chat because we don’t need an extra tool and switching back and forth between tools (except perhaps between chat and jira), which makes it also easy &amp; lean.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading" id="ListingXPEstimation-Afewthingstonote:">A few things to note:</h3>
+
+
+
+<ol>
+<li>In Agile, We break down tasks with multiple tasks if it’s equal or higher than 5. No single story/task in the sprint should be higher than 5, if it is, break down to multiple tasks.</li>
+
+
+
+<li>Use subtasks in the case where one ticket requires 2 (or more) PRs that need to be worked in parallel.</li>
+
+
+
+<li>This guide is just a common understanding around sizing the story in a uniform way within a squad, if you are following the Agile. You can tweak it, modify it to best suit your requirement. This is just a guidance to start with.</li>
+
+
+
+<li>Team members can look at this cheat sheet while planning and come up with their size in story points. The discussion from there should happen on the difference in understanding of these 3 parameters and not the story point as a whole.</li>
+
+
+
+<li>Always estimate in story points in Agile, even when estimating RFC for the first time.&nbsp;<strong>Whenever we need to estimate something, a new epic will be created, and you will break down the RFC in stories/tasks to estimate. We will not use documents and efficiently use Jira so PM won&#8217;t have to break it down to tasks, and same tasks will be used during grooming meetings. Estimate each story/task with Story points.</strong></li>
+
+
+
+<li>Give preference to the team member’s estimation who is actually going to work on the task, in case there’s a conflict.</li>
+</ol>
+<p>The post <a rel="nofollow" href="./../../../agile-estimation-demystifying-story-points-in-most-easiest-way/index.html">Agile Estimation &#8211; Demystifying Story Points In Most Easiest Way</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../agile-estimation-demystifying-story-points-in-most-easiest-way/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">5088</post-id>	</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 46/51 objects using disk
+Page Caching using disk 
+Content Delivery Network via N/A
+Minified using disk
+Database Caching 5/16 queries in 0.004 seconds using disk
+
+Served from: rutvikbhatt.com @ 2023-10-07 16:36:42 by W3 Total Cache
+-->

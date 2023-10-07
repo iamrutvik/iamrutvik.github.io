@@ -12,7 +12,7 @@ solid #dc3232;background:#fff;padding: .2em .8em;width:24em}.wpcf7-list-item{dis
 spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}@keyframes
 blink{from{opacity:0}50%{opacity:1}to{opacity:0}}.wpcf7 input[type="file"]{cursor:pointer}.wpcf7 input[type="file"]:disabled{cursor:default}.wpcf7 .wpcf7-submit:disabled{cursor:not-allowed}.wpcf7 input[type="url"],
 .wpcf7 input[type="email"],
-.wpcf7 input[type="tel"]{direction:ltr}.tp_recent_tweets{}.tp_recent_tweets
+.wpcf7 input[type="tel"]{direction:ltr}.wpcf7-reflection>output{display:list-item;list-style:none}.wpcf7-reflection>output[hidden]{display:none}.tp_recent_tweets{}.tp_recent_tweets
 li{background-image:url('./../../plugins/recent-tweets-widget/assets/tweet.png');background-repeat:no-repeat;background-position:0px 4px;padding-left:30px;padding-bottom:20px;line-height:20px;list-style-type:none}.tp_recent_tweets  li
 a{font-weight:bold}.tp_recent_tweets
 .twitter_time{display:block;color:#999;font-size:12px;font-style:italic;font-weight:normal}.rs-p-wp-fix{display:none !important;margin:0

@@ -14,17 +14,17 @@
 	<title>Google Allo Archives - Rutvik Bhatt</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../index.html</link>
-	<description>Technologist and Product Manager</description>
+	<description>Technologist and Engineering Leader</description>
 	<lastBuildDate>Mon, 10 Aug 2020 19:57:40 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<generator>https://wordpress.org/?v=6.3.1</generator>
 
 <image>
-	<url>./../../../wp-content/uploads/2020/06/cropped-Rbg-favicon-32x32.png</url>
+	<url>https://i0.wp.com/rutvikbhatt.com/wp-content/uploads/2020/06/cropped-Rbg-favicon.png?fit=32%2C32&#038;ssl=1</url>
 	<title>Google Allo Archives - Rutvik Bhatt</title>
 	<link>./../index.html</link>
 	<width>32</width>
@@ -32,10 +32,10 @@
 </image> 
 <site xmlns="com-wordpress:feed-additions:1">178776205</site>	<item>
 		<title>Google Allo : Is it a new way to hack into people’s life?</title>
-		<link>./../../../products/google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=google-allo-is-it-a-new-way-to-hack-into-peoples-life</link>
-					<comments>./../../../products/google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html#respond</comments>
+		<link>./../../../google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=google-allo-is-it-a-new-way-to-hack-into-peoples-life</link>
+					<comments>./../../../google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html#respond</comments>
 		
-		<dc:creator><![CDATA[iamrutvik]]></dc:creator>
+		<dc:creator><![CDATA[Rutvik Bhatt]]></dc:creator>
 		<pubDate>Thu, 22 Sep 2016 19:21:00 +0000</pubDate>
 				<category><![CDATA[Products]]></category>
 		<category><![CDATA[Allo]]></category>
@@ -45,10 +45,10 @@
 		<guid isPermaLink="false">./../../../index.html?p=4985</guid>
 
 					<description><![CDATA[<p>So finally, after months of waiting, the most intelligent chat app was launched yesterday. It brings a fun to chat but also brings some concerns along with it, related to privacy, especially when google is known to keep track of everything you do in your life. It has all fancy features powered by AI, like...</p>
-<p>The post <a rel="nofollow" href="./../../../products/google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html">Google Allo : Is it a new way to hack into people’s life?</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+<p>The post <a rel="nofollow" href="./../../../google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html">Google Allo : Is it a new way to hack into people’s life?</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[
-<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="https://miro.medium.com/max/1280/1*jnEzaV3oAwF18Winu9ikKg.jpeg" alt="Google Allo : Is it a new way to hack into people’s life?" width="640" height="533"/><figcaption>A ‘Smart’ Chat App, Allo, launched yesterday</figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img decoding="async" fetchpriority="high" src="https://i0.wp.com/miro.medium.com/max/1280/1*jnEzaV3oAwF18Winu9ikKg.jpeg?resize=640%2C533&#038;ssl=1" alt="Google Allo : Is it a new way to hack into people’s life?" width="640" height="533" data-recalc-dims="1" /><figcaption>A ‘Smart’ Chat App, Allo, launched yesterday</figcaption></figure></div>
 
 
 
@@ -109,10 +109,10 @@
 
 
 <p>Though Google has already updated its Terms &amp; Conditions and clearly mentioned the change, But it would be much of a show how Google responds to these tweets.</p>
-<p>The post <a rel="nofollow" href="./../../../products/google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html">Google Allo : Is it a new way to hack into people’s life?</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+<p>The post <a rel="nofollow" href="./../../../google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html">Google Allo : Is it a new way to hack into people’s life?</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../products/google-allo-is-it-a-new-way-to-hack-into-peoples-life/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>./../../../google-allo-is-it-a-new-way-to-hack-into-peoples-life/feed/index.html</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
@@ -123,10 +123,11 @@
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-Object Caching 46/48 objects using disk
-Page Caching using disk: enhanced 
-Lazy Loading (feed)
+Object Caching 47/52 objects using disk
+Page Caching using disk 
+Content Delivery Network via N/A
 Minified using disk
+Database Caching 5/16 queries in 0.004 seconds using disk
 
-Served from: rutvikbhatt.com @ 2022-07-25 23:46:25 by W3 Total Cache
+Served from: rutvikbhatt.com @ 2023-10-07 16:36:43 by W3 Total Cache
 -->

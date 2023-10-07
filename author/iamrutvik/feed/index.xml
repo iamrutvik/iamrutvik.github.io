@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Rutvik Bhatt, Author at Rutvik Bhatt</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Technologist and Engineering Leader</description>
+	<lastBuildDate>Sat, 30 Sep 2023 14:27:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.3.1</generator>
+
+<image>
+	<url>https://i0.wp.com/rutvikbhatt.com/wp-content/uploads/2020/06/cropped-Rbg-favicon.png?fit=32%2C32&#038;ssl=1</url>
+	<title>Rutvik Bhatt, Author at Rutvik Bhatt</title>
+	<link>./../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">178776205</site>	<item>
+		<title>How to Architect for Simplicity and Scale Without Microservices?</title>
+		<link>./../../../architecting-for-simplicity-scaling-without-microservices/index.html?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=architecting-for-simplicity-scaling-without-microservices</link>
+					<comments>./../../../architecting-for-simplicity-scaling-without-microservices/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Rutvik Bhatt]]></dc:creator>
+		<pubDate>Tue, 19 Sep 2023 11:50:59 +0000</pubDate>
+				<category><![CDATA[Software Engineering]]></category>
+		<category><![CDATA[engineering]]></category>
+		<category><![CDATA[microservices]]></category>
+		<category><![CDATA[scalibility]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=5155</guid>
+
+					<description><![CDATA[<p>Creating simple systems that can scale up to the level of Google or Facebook involves careful architectural considerations. While microservices have become a popular approach, as a lot of tech folks rightly pointed out, they come with complexities. Lets understand what things we should be more careful when we architect for simplicity. As technology continues...</p>
+<p>The post <a rel="nofollow" href="./../../../architecting-for-simplicity-scaling-without-microservices/index.html">How to Architect for Simplicity and Scale Without Microservices?</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Creating simple systems that can scale up to the level of <a href="https://www.google.com/?client=safari">Google</a> or <a href="https://www.facebook.com/">Facebook</a> involves careful architectural considerations. While microservices have become a popular approach, as a lot of tech folks rightly pointed out, they come with complexities. Lets understand what things we should be more careful when we architect for simplicity. </p>
+
+
+
+<p>As technology continues to evolve, many companies have adopted <a href="https://microservices.io/">microservices</a> architecture to meet the demands of scalability, agility, and rapid development. <a href="https://microservices.io/">Microservices</a> promise modularity and flexibility, allowing organizations to scale components independently. However, the transition to <a href="https://microservices.io/">microservices</a> is not without its challenges, and some companies find themselves struggling to fully realize the benefits. In this article, we explore the current status of companies that have embraced <a href="https://microservices.io/">microservices</a> but are facing significant hurdles in various aspects of their architecture. These real-world examples shed light on the complexities and pitfalls that can arise, highlighting the need for careful consideration and continuous adaptation in the world of microservices.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Decomposition of Functionality</strong></h3>
+
+
+
+<p>Instead of creating a microservice for every verb, a simpler system can start with a monolithic architecture and decompose functionality only when necessary. This means breaking the system into smaller components based on functional boundaries, not just verbs. As the system grows, you can selectively transition to microservices.&nbsp;</p>
+
+
+
+<p>Uber initially embraced microservices extensively, which led to over 1,000 services. This caused complexities in managing the system. They later adopted a more <a href="http://highscalability.com/blog/2020/4/8/one-team-at-uber-is-moving-from-microservices-to-macroservic.html">balanced approach</a>, moving back to a monolithic structure for certain parts of their application to simplify their architecture.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Monolithic to Modular Transition</strong></h3>
+
+
+
+<p>Start with a monolithic architecture that is well-organized and modular. Use a clean separation of concerns and follow best practices like SOLID principles. This allows for easy componentization when the need arises, without the immediate overhead of microservices.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Data Consistency</strong></h3>
+
+
+
+<p>Simple systems maintain strong data consistency through ACID transactions when needed. While distributed systems may use eventual consistency, complex distributed databases should be avoided unless absolutely necessary. Techniques like sharding can help scale traditional databases.</p>
+
+
+
+<p>Twitter faced data consistency issues when transitioning to a microservices architecture. In some cases, inconsistencies in data led to problems such as tweets disappearing temporarily. Achieving strong data consistency across microservices can be challenging without the proper design.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>State Management</strong></h3>
+
+
+
+<p>Emphasize statelessness where possible. Keep state management at the edge, in client applications or use external services like Redis or Elasticsearch for specific needs. This reduces the complexity of handling state within the core system.</p>
+
+
+
+<p>Airbnb encountered challenges with state management in their transition to microservices. Handling user sessions and maintaining state across multiple services became complex. They had to introduce additional technologies and tools to manage state effectively.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Observability and Monitoring</strong></h3>
+
+
+
+<p>Implement thorough monitoring and observability early in the development process. Collect metrics, logs, and traces to gain insights into system behavior. Simple systems can focus on a limited set of components, making it easier to monitor and troubleshoot.</p>
+
+
+
+<p>Netflix, a pioneer in microservices, realized the importance of observability early on. They invested heavily in tools like the Netflix Observability Pipeline (Eureka, Hystrix, etc.) to manage the complexities introduced by microservices. This illustrates how vital observability is in microservices architectures.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Fault Tolerance</strong></h3>
+
+
+
+<p>Build fault tolerance into individual components and gradually expand it to the entire system. Use techniques like retries, circuit breakers, and timeouts to handle failures gracefully. A simpler system has fewer components to make fault-tolerant.</p>
+
+
+
+<p>Amazon Web Services (AWS) experienced an outage in 2017 due to a fault in their S3 service. While not a direct microservices issue, it highlights the importance of fault tolerance and redundancy, which are crucial in microservices architectures.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>High Availability</strong></h3>
+
+
+
+<p>Achieve high availability through load balancing, redundancy, and failover strategies. Ensure that critical components are highly available while considering cost-effectiveness.</p>
+
+
+
+<p>Docker, a company known for containerization technology, faced service disruptions due to issues in their microservices architecture. Ensuring high availability across numerous microservices can be challenging, and downtime in one service can affect the entire application.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Consensus and Distributed Systems</strong></h3>
+
+
+
+<p>Avoid unnecessary complexity in distributed systems. Use distributed consensus mechanisms like Raft or Paxos sparingly. Simple systems can rely on single points of failure initially and then evolve to distribute critical components.</p>
+
+
+
+<p>Twitter faced issues with their &#8220;FlockDB&#8221; distributed graph database, leading to data inconsistencies and scaling challenges. Distributed systems and consensus mechanisms, when not properly managed, can introduce complexity and potential problems.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Scaling Horizontally</strong></h3>
+
+
+
+<p>Plan for horizontal scaling by deploying additional instances of components that are under heavy load. A simpler system is easier to scale horizontally because there are fewer moving parts to manage.</p>
+
+
+
+<p>Etsy, an online marketplace, found it challenging to scale certain microservices due to uneven traffic patterns. While microservices can theoretically scale independently, achieving this in practice can be complex and resource-intensive.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Incremental Growth</strong></h3>
+
+
+
+<p>Grow the system incrementally based on actual usage and performance bottlenecks. Invest in optimization and scaling efforts where they have the most impact rather than over-engineering from the start.</p>
+
+
+
+<p>SoundCloud, a music streaming platform, initially embraced microservices but later faced financial difficulties partly due to the complexity introduced by microservices. They had to restructure their system and lay off employees to cut costs.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Resource Efficiency</strong></h3>
+
+
+
+<p>Simple systems tend to be more resource-efficient. They can run on fewer servers, reducing infrastructure costs.</p>
+
+
+
+<p>Medium, a content publishing platform, experienced increased infrastructure costs with the adoption of microservices. Maintaining multiple services consumed more resources than their earlier monolithic architecture.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Team Expertise</strong></h3>
+
+
+
+<p>Consider the expertise of your development and operations teams. Scaling a system also means scaling your team&#8217;s ability to manage it. A simpler system is easier to understand and maintain.</p>
+
+
+
+<p>Gilt Groupe, an online shopping platform, admitted to struggling with the expertise required to manage a complex microservices ecosystem. Smaller teams may find it challenging to maintain a plethora of microservices effectively.</p>
+
+
+
+<p>In summary, simplicity in system design does not mean sacrificing scalability. It means making informed decisions based on actual needs, prioritizing simplicity in initial iterations, and evolving the architecture as the system grows. By carefully managing complexity and scaling incrementally, a simple system can indeed scale to handle the demands of large-scale applications like Google or Facebook.</p>
+
+
+
+<p>In all these examples, while microservices offer benefits, they can introduce significant complexity if not managed carefully. Striking the right balance between simplicity and microservices is essential to ensure scalability and maintainability in real-world applications.</p>
+<p>The post <a rel="nofollow" href="./../../../architecting-for-simplicity-scaling-without-microservices/index.html">How to Architect for Simplicity and Scale Without Microservices?</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../architecting-for-simplicity-scaling-without-microservices/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">5155</post-id>	</item>
+		<item>
+		<title>Configurability in Product Development: A Guide for Engineering Leaders</title>
+		<link>./../../../configurability-in-product-development-a-guide-for-engineering-leaders/index.html?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=configurability-in-product-development-a-guide-for-engineering-leaders</link>
+					<comments>./../../../configurability-in-product-development-a-guide-for-engineering-leaders/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Rutvik Bhatt]]></dc:creator>
+		<pubDate>Sun, 10 Sep 2023 21:48:21 +0000</pubDate>
+				<category><![CDATA[Software Engineering]]></category>
+		<category><![CDATA[configurable products]]></category>
+		<category><![CDATA[engineering]]></category>
+		<category><![CDATA[flexibility]]></category>
+		<category><![CDATA[guides]]></category>
+		<category><![CDATA[time to market]]></category>
+		<guid isPermaLink="false">./../../../embracing-configurability-in-product-development-a-guide-for-engineering-leaders/index.html</guid>
+
+					<description><![CDATA[<p>In the fast-paced world of software development, the ability to adapt and customize products to meet unique customer needs is increasingly vital. However, building configurable products might not always be the first choice for product managers who lean towards standardized solutions. As an engineering leader, it&#8217;s essential to understand why configurability matters and how you...</p>
+<p>The post <a rel="nofollow" href="./../../../configurability-in-product-development-a-guide-for-engineering-leaders/index.html">Configurability in Product Development: A Guide for Engineering Leaders</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>In the fast-paced world of software development, the ability to adapt and customize products to meet unique customer needs is increasingly vital. However, building configurable products might not always be the first choice for product managers who lean towards standardized solutions. As an engineering leader, it&#8217;s essential to understand why configurability matters and how you can shift your team&#8217;s mindset to embrace it, even when your product managers may be hesitant. In this post, we&#8217;ll explore the what, why, and how of building configurable products.</p>
+
+
+
+<h3 class="wp-block-heading">Why Build Configurable Products?</h3>
+
+
+
+<p>Before delving into the &#8220;how,&#8221; let&#8217;s first address the &#8220;why&#8221; behind building configurable products. There are several compelling reasons to consider:</p>
+
+
+
+<ol>
+<li><strong>Customer-Centric Approach:</strong> Configurable products empower customers to tailor software to their specific needs. This level of customization can lead to increased customer satisfaction and loyalty.</li>
+
+
+
+<li><strong>Market Adaptability:</strong> In rapidly changing markets, configurable products can be quickly adjusted to respond to new trends, competitors, or emerging customer demands, giving your company a competitive edge.</li>
+
+
+
+<li><strong>Reduced Development Time:</strong> While it may seem counterintuitive, building configurable products can streamline development. Once the framework is in place, creating new configurations is often faster than building entirely new products from scratch.</li>
+
+
+
+<li><strong>Cost Efficiency:</strong> Configurable products can result in cost savings by reducing the need for extensive development of niche, one-off solutions.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading">Shifting Left: Changing Mindsets</h3>
+
+
+
+<p>Shifting your team&#8217;s mindset towards building configurable products can be a challenge, especially if your product managers are initially resistant. Here are some strategies to help you navigate this shift:</p>
+
+
+
+<ol>
+<li><strong>Educate Your Team:</strong> Host workshops or training sessions to help your team understand the benefits of configurability. Use real-world examples of successful configurable products to illustrate the impact.</li>
+
+
+
+<li><strong>Collaborate Closely:</strong> Work closely with your product managers to find common ground. Encourage open communication and align on the long-term goals of configurability.</li>
+
+
+
+<li><strong>Start Small:</strong> Begin by identifying one or two features that could benefit from configurability. Pilot these within your team to demonstrate the advantages.</li>
+
+
+
+<li><strong>Showcase Success Stories:</strong> Share success stories from other companies that have embraced configurability, highlighting the positive outcomes.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading">How to Build Configurable Products</h3>
+
+
+
+<p>Now that you&#8217;re convinced of the benefits and have started shifting your team&#8217;s mindset, let&#8217;s dive into how to build configurable products effectively:</p>
+
+
+
+<ol>
+<li><strong>Modular Architecture:</strong> Design your software with modularity in mind. Break down complex systems into smaller, interchangeable components that can be easily configured.</li>
+
+
+
+<li><strong>User-Friendly Configuration Interfaces:</strong> Invest in creating intuitive user interfaces for configuring the product. Ensure that customers can customize without needing a technical background.</li>
+
+
+
+<li><strong>Testing and Quality Assurance:</strong> Rigorously test all possible configurations to ensure stability and avoid unexpected issues. Automation can be invaluable for this step.</li>
+
+
+
+<li><strong>Documentation:</strong> Provide comprehensive documentation and support resources to guide users through the configuration process.</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading">Leveraging Feature Flagging and YAML/JSON Tooling</h3>
+
+
+
+<p>When building configurable products, one powerful approach is to incorporate feature flagging alongside YAML or JSON tooling. This combination can help you efficiently manage configurations for each modular nano component of your architecture and product features.</p>
+
+
+
+<h4 class="wp-block-heading">Feature Flagging</h4>
+
+
+
+<p>Feature flagging, also known as feature toggles or feature switches, is a development technique that allows you to turn specific product features on or off at runtime. Here&#8217;s how it can benefit your configurable product:</p>
+
+
+
+<ol>
+<li><strong>Gradual Rollouts:</strong> Feature flags enable you to roll out new configurations gradually. You can initially deploy a feature to a small subset of users, gather feedback, and make adjustments as needed before a broader release.</li>
+
+
+
+<li><strong>Emergency Rollbacks:</strong> In case of unexpected issues with a new configuration, you can quickly roll back to a previous state by toggling off the feature flag, minimizing downtime and user impact.</li>
+
+
+
+<li><strong>A/B Testing:</strong> You can use feature flags for A/B testing to compare the performance and user experience of different configurations and make data-driven decisions.</li>
+
+
+
+<li><strong>Conditional Logic:</strong> Implement complex configuration logic within your codebase using feature flags. This allows for dynamic customization based on user profiles, groups, or specific conditions.</li>
+</ol>
+
+
+
+<h4 class="wp-block-heading"><a href="https://yaml.org/">YAML</a> or <a href="https://www.json.org/json-en.html">JSON</a> Tooling</h4>
+
+
+
+<p>To complement feature flagging, YAML or JSON configuration files can store and manage the various settings and options for your modular nano components. Here&#8217;s how YAML or JSON can enhance your configurability:</p>
+
+
+
+<ol>
+<li><strong>Human-Readable:</strong> YAML and JSON are both human-readable formats, making it easier for developers and product managers to understand and modify configurations without diving deep into code.</li>
+
+
+
+<li><strong>Version Control:</strong> Configuration files can be version-controlled alongside your codebase, ensuring that changes are tracked, documented, and auditable.</li>
+
+
+
+<li><strong>Portability:</strong> These formats are portable across different programming languages and platforms, allowing you to maintain a consistent configuration structure.</li>
+
+
+
+<li><strong>Separation of Concerns:</strong> Keeping configuration settings in separate YAML or JSON files promotes the separation of concerns, making your codebase cleaner and more maintainable.</li>
+
+
+
+<li><strong>Validation and Tooling:</strong> Various libraries and tools are available to validate and manage YAML or JSON configurations, helping you catch errors early in the development process.</li>
+</ol>
+
+
+
+<p>By integrating feature flagging and YAML or JSON tooling into your development workflow, you empower your engineering team to create highly configurable products. This approach not only enhances flexibility but also simplifies the process of managing and updating configurations for individual modular components and product features.</p>
+
+
+
+<p>The combination of feature flagging and YAML or JSON tooling is a powerful strategy for building and managing configurable products efficiently. This approach enables controlled rollouts, conditional customization, and seamless configuration management, ultimately delivering a more adaptable and customer-centric product.</p>
+
+
+
+<p>In conclusion, building configurable products is a strategic move that can lead to enhanced customer satisfaction, market adaptability, and cost efficiency. Shifting your team&#8217;s mindset towards configurability may take time and effort, but the benefits are well worth it. By following best practices and leveraging open source tools, you can lead your engineering team towards a more configurable and customer-centric future.</p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex"></figure>
+<p>The post <a rel="nofollow" href="./../../../configurability-in-product-development-a-guide-for-engineering-leaders/index.html">Configurability in Product Development: A Guide for Engineering Leaders</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../configurability-in-product-development-a-guide-for-engineering-leaders/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">5128</post-id>	</item>
+		<item>
+		<title>Agile Estimation &#8211; Demystifying Story Points In Most Easiest Way</title>
+		<link>./../../../agile-estimation-demystifying-story-points-in-most-easiest-way/index.html?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=agile-estimation-demystifying-story-points-in-most-easiest-way</link>
+					<comments>./../../../agile-estimation-demystifying-story-points-in-most-easiest-way/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Rutvik Bhatt]]></dc:creator>
+		<pubDate>Tue, 26 Jul 2022 12:00:29 +0000</pubDate>
+				<category><![CDATA[Agile]]></category>
+		<category><![CDATA[agile]]></category>
+		<category><![CDATA[agile estimation]]></category>
+		<category><![CDATA[story points]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=5088</guid>
+
+					<description><![CDATA[<p>What are Agile Story points? Story points in Agile represent 3 important factors &#8211;&#160;work complexity, the amount of work, and risk or uncertainty. It&#8217;s just not about the clock. How will we do it? I mostly try thus 4-step approach to stream line the mindset of engineers in the team. Yes, of-course, it&#8217;s all about...</p>
+<p>The post <a rel="nofollow" href="./../../../agile-estimation-demystifying-story-points-in-most-easiest-way/index.html">Agile Estimation &#8211; Demystifying Story Points In Most Easiest Way</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p></p>
+
+
+
+<h3 class="wp-block-heading" id="ListingXPEstimation-Whatisit?">What are Agile Story points?</h3>
+
+
+
+<blockquote class="wp-block-quote">
+<p>Story points in Agile represent 3 important factors &#8211;&nbsp;<strong>work complexity, the amount of work, and risk or uncertainty.</strong></p>
+<cite>It&#8217;s just not about the clock.</cite></blockquote>
+
+
+
+<ul>
+<li>Story points in Agile are units of <a href="https://www.atlassian.com/agile/project-management/estimation">measure for expressing an estimate</a> of the overall effort (!= time!!!) required to fully implement a product backlog item or any other piece of work.&nbsp;</li>
+
+
+
+<li>When the development team conducts an estimation, it is recommended to abandon the traditional “human-day” assessment method, using the point of the story point, We use Fibonacci number (1, 2, 3, 5, 8, 13, 21…) to estimate the story point</li>
+
+
+
+<li>It should represent 3 important factors &#8211;&nbsp;<strong>work complexity, the amount of work, and risk or uncertainty.</strong></li>
+
+
+
+<li>It’s a relative estimation, not absolute, meaning that we should not only consider the time factor while estimating in Agile.</li>
+
+
+
+<li>Agile Story points are coarse grained , relative measures of a raw effort and size. An item worth 1 story point is half of the size of an item worth 2 points. An item sized as 3 points requires as much effort as an item with one point and an item with 2 points added together!</li>
+
+
+
+<li>Relative measures take advantage of the fact that size itself is relative: the semantics of big and small depend on our reference point!</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="ListingXPEstimation-Howwillwedoit?">How will we do it?</h3>
+
+
+
+<p>I mostly try thus 4-step approach to stream line the mindset of engineers in the team. Yes, of-course, it&#8217;s all about the mind set. Its never a right answer, but when you do this repeatedly, your team will get better at estimating the effort. </p>
+
+
+
+<h4 class="wp-block-heading" id="ListingXPEstimation-Step1-ReferenceStories">Step 1 &#8211; Reference Stories</h4>
+
+
+
+<ul>
+<li>Some sample stories that could represent a few of the first Fibonacci numbers like 1,2,3, and 5. We only want to keep it upto 5, so that no story or task would be too large as 8. It will promote culture of breaking down tasks to granular piece of work</li>
+
+
+
+<li>Use it for reference in first few estimation, eventually you won’t need as you would be more comfortable with reference points</li>
+</ul>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Story Points</th><th>Reference&nbsp;Functional/non Function Requirement</th></tr></thead><tbody><tr><td>0.5</td><td>Change configuration in app config, Deprecating feature flags</td></tr><tr><td>1</td><td>Minor UI changes, Adding a feature flag in one place or adding some new fields and parsing them in API contract, IaaS changes</td></tr><tr><td>2</td><td>Implement some UI changes, Modifying &amp; Implementing API contracts</td></tr><tr><td>3</td><td>Implement complex UI display, Adding a new API endpoint</td></tr><tr><td>5</td><td>New Features broken down to smaller pieces of work</td></tr></tbody></table><figcaption class="wp-element-caption">Table 1: Reference stories</figcaption></figure>
+
+
+
+<h4 class="wp-block-heading" id="ListingXPEstimation-Step2-ApplyCheatSheet">Step 2 &#8211; Apply Cheat Sheet</h4>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th><strong>Uncertainty</strong></th><th><strong>Complexity</strong></th><th><strong>Effort</strong></th><th><strong>Points</strong></th></tr></thead><tbody><tr><td>Small</td><td>Small</td><td>Small</td><td>1</td></tr><tr><td>Small</td><td>Small</td><td>Medium</td><td>2</td></tr><tr><td>Small</td><td>Small</td><td>Large</td><td>5</td></tr><tr><td>Small</td><td>Medium</td><td>Small</td><td>2</td></tr><tr><td>Small</td><td>Medium</td><td>Medium</td><td>3</td></tr><tr><td>Small</td><td>Medium</td><td>Large</td><td>5</td></tr><tr><td>Small</td><td>Large</td><td>Small</td><td>3</td></tr><tr><td>Small</td><td>Large</td><td>Large</td><td>5</td></tr><tr><td>Small</td><td>Large</td><td>Large</td><td>8</td></tr><tr><td>Medium</td><td>Small</td><td>Small</td><td>3</td></tr><tr><td>Medium</td><td>Small</td><td>Medium</td><td>5</td></tr><tr><td>Medium</td><td>Small</td><td>Large</td><td>8</td></tr><tr><td>Medium</td><td>Medium</td><td>Small</td><td>5</td></tr><tr><td>Medium</td><td>Medium</td><td>Medium</td><td>5</td></tr><tr><td>Medium</td><td>Medium</td><td>Large</td><td>8</td></tr><tr><td>Medium</td><td>Large</td><td>Small</td><td>5</td></tr><tr><td>Medium</td><td>Large</td><td>Medium</td><td>8</td></tr><tr><td>Large</td><td>Medium</td><td>Small</td><td>8</td></tr><tr><td>Large</td><td>Medium</td><td>Medium</td><td>8</td></tr><tr><td>Large</td><td>Medium</td><td>Large</td><td>13</td></tr><tr><td>Large</td><td>Large</td><td>Small</td><td>8</td></tr><tr><td>Large</td><td>Large</td><td>Medium</td><td>13</td></tr><tr><td>Large</td><td>Large</td><td>Large</td><td>13</td></tr></tbody></table><figcaption class="wp-element-caption">Table 2 : Cheat sheet</figcaption></figure>
+
+
+
+<h4 class="wp-block-heading" id="ListingXPEstimation-Step3-Triangulation">Step 3 &#8211; Triangulation</h4>
+
+
+
+<p>Triangulation is checking not only a reference of the same number but the two around it. For instance, if you consider an item to be a 5, get a 3 and an 8 and see if it really is in between those.</p>
+
+
+
+<h4 class="wp-block-heading" id="ListingXPEstimation-Step4-PlanningPoker">Step 4 &#8211; Planning Poker</h4>
+
+
+
+<p><a href="https://www.atlassian.com/blog/agile/planning-poker-sane-healthy">Planning poker</a> is a common practice across the many tech companies. The team will take an item from the backlog, discuss it briefly, and each member will mentally formulate an estimate. Then everyone shares the number one after another that reflects their estimate. If everyone is in agreement, great! If not, take some time (but not too much time–just a couple minutes) to understand the rationale behind different estimates.</p>
+
+
+
+<p>When a team member is justifying his/her own estimation, use Step 1’s reference points and step 2’s cheat sheet to explain rationale behind certain estimation.&nbsp;There are many <a href="https://marketplace.atlassian.com/apps/1212495/planning-poker?hosting=cloud&amp;tab=overview">planning poker tools</a> available on the internet. Since many teams are now remotely working, using the zoom/teams/Google Meet Chat function, you don&#8217;t have to introduce another tool just for this. </p>
+
+
+
+<h5 class="wp-block-heading" id="ListingXPEstimation-HowtodoPlanningPoker?">How to do Planning Poker?</h5>
+
+
+
+<ol>
+<li>Post proper understanding of task on what exactly needs to be done, Everybody types their vote into the zoom chat and on the count of 0 everybody presses enter</li>
+
+
+
+<li>The team members with the highest and lowest estimate start right away sharing their ideas/reasoning behind their estimate (everybody else can add&nbsp; their opinion as well, of course)</li>
+
+
+
+<li>Post short conversation, We will rerun the vote and usually the estimates will be much more aligned (also comparing to reference stories might be a valuable tool)</li>
+</ol>
+
+
+
+<h6 class="wp-block-heading">Some other agreements you can have during Planning poker:</h6>
+
+
+
+<ol>
+<li>If there’s an disagreement after second vote, We will go with the higher estimation (rather under- than over-commit in the beginning)</li>
+
+
+
+<li>After each voting round, somebody puts a “separator line” into the chat (can be just 3-5 “–” or something, just to have visual break between the votes)</li>
+</ol>
+
+
+
+<p>The fun comes from observing who will be the first when the count-down is at 0 or also nudging the one who might be late with the vote (potentially trying to get a sneak peek of the others&#8217; votes). A big advantage (compared to using 5 fingers or planning poker cards) is that the votes stay visible &#8211; so it is easier to drive the conversation (e.g. between highest and lowest vote) We use Zoom chat because we don’t need an extra tool and switching back and forth between tools (except perhaps between chat and jira), which makes it also easy &amp; lean.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading" id="ListingXPEstimation-Afewthingstonote:">A few things to note:</h3>
+
+
+
+<ol>
+<li>In Agile, We break down tasks with multiple tasks if it’s equal or higher than 5. No single story/task in the sprint should be higher than 5, if it is, break down to multiple tasks.</li>
+
+
+
+<li>Use subtasks in the case where one ticket requires 2 (or more) PRs that need to be worked in parallel.</li>
+
+
+
+<li>This guide is just a common understanding around sizing the story in a uniform way within a squad, if you are following the Agile. You can tweak it, modify it to best suit your requirement. This is just a guidance to start with.</li>
+
+
+
+<li>Team members can look at this cheat sheet while planning and come up with their size in story points. The discussion from there should happen on the difference in understanding of these 3 parameters and not the story point as a whole.</li>
+
+
+
+<li>Always estimate in story points in Agile, even when estimating RFC for the first time.&nbsp;<strong>Whenever we need to estimate something, a new epic will be created, and you will break down the RFC in stories/tasks to estimate. We will not use documents and efficiently use Jira so PM won&#8217;t have to break it down to tasks, and same tasks will be used during grooming meetings. Estimate each story/task with Story points.</strong></li>
+
+
+
+<li>Give preference to the team member’s estimation who is actually going to work on the task, in case there’s a conflict.</li>
+</ol>
+<p>The post <a rel="nofollow" href="./../../../agile-estimation-demystifying-story-points-in-most-easiest-way/index.html">Agile Estimation &#8211; Demystifying Story Points In Most Easiest Way</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../agile-estimation-demystifying-story-points-in-most-easiest-way/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">5088</post-id>	</item>
+		<item>
+		<title>Google Allo : Is it a new way to hack into people’s life?</title>
+		<link>./../../../google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=google-allo-is-it-a-new-way-to-hack-into-peoples-life</link>
+					<comments>./../../../google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Rutvik Bhatt]]></dc:creator>
+		<pubDate>Thu, 22 Sep 2016 19:21:00 +0000</pubDate>
+				<category><![CDATA[Products]]></category>
+		<category><![CDATA[Allo]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Google Allo]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=4985</guid>
+
+					<description><![CDATA[<p>So finally, after months of waiting, the most intelligent chat app was launched yesterday. It brings a fun to chat but also brings some concerns along with it, related to privacy, especially when google is known to keep track of everything you do in your life. It has all fancy features powered by AI, like...</p>
+<p>The post <a rel="nofollow" href="./../../../google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html">Google Allo : Is it a new way to hack into people’s life?</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img decoding="async" fetchpriority="high" src="https://i0.wp.com/miro.medium.com/max/1280/1*jnEzaV3oAwF18Winu9ikKg.jpeg?resize=640%2C533&#038;ssl=1" alt="Google Allo : Is it a new way to hack into people’s life?" width="640" height="533" data-recalc-dims="1" /><figcaption>A ‘Smart’ Chat App, Allo, launched yesterday</figcaption></figure></div>
+
+
+
+<p>So finally, after months of waiting, the most intelligent chat app was launched yesterday. It brings a fun to chat but also brings some concerns along with it, related to privacy, especially when google is known to keep track of everything you do in your life.</p>
+
+
+
+<p>It has all fancy features powered by AI, like Google assistant to serve you what ever you ask and It will get better and better with time.</p>
+
+
+
+<p>When Allo was announced at Google’s I/O conference earlier this year, the messaging app was presented as a step forward for privacy. Alongside the end-to-end-encrypted Incognito Mode, the Allo team talked about bold new message retention practices, storing messages only transiently rather than indefinitely.</p>
+
+
+
+<p>But with the release of the app yesterday, Google is backing off on some of those features.</p>
+
+
+
+<p>The version of Allo rolling out today will store all non-incognito messages by default — a clear change from Google’s earlier statements that the app would only store messages transiently and in non-identifiable form. The records will now persist until the user actively deletes them, giving Google default access to a full history of conversations in the app. Users can also avoid the logging by using Allo’s Incognito Mode, which is still fully end-to-end encrypted and unchanged from the initial announcement.</p>
+
+
+
+<blockquote class="wp-block-quote"><p>A change to improve the Allo assistant — Google</p></blockquote>
+
+
+
+<p>Like Hangouts and Gmail, Allo messages will still be encrypted between the device and Google servers, and stored on servers using encryption that leaves the messages accessible to Google’s algorithms.</p>
+
+
+
+<p>According to Google, the change was made to improve Allo’s smart reply feature, which generates suggested responses to a given conversation. Like most machine learning systems, the smart replies work better with more data. As the Allo team tested those replies, they decided the performance boost from permanently stored messages was worth giving up privacy benefits of transient storage.</p>
+
+
+
+<p>The decision will also have significant consequences for law enforcement access to Allo messages. By default, Allo messages will now be accessible to lawful requests, similar to message data in Gmail and Hangouts and location data collected by Android. In the past, Google legal officers have stated that subpoenas are not sufficient to obtain that information, stating “we believe a warrant is required by the Fourth Amendment to the U.S. Constitution” for access to private information in a Google account.</p>
+
+
+
+<p>The messages might not be there if the user had previously deleted them, or if the conversations took place in Incognito Mode — but in most cases, they will be. That leaves Google with much less danger of the kind of legal showdown Apple faced in San Bernardino and WhatsApp currently faces in Brazil.</p>
+
+
+
+<p>The ex-NSA contractor, Snowden, posted a series of Tweets to warn everyone away from the chat app, which he says will “<strong>record every message you ever send and make it available to police upon request</strong>”.</p>
+
+
+
+<figure><iframe src="https://cdn.embedly.com/widgets/media.html?type=text%2Fhtml&amp;key=d04bfffea46d4aeda930ec88cc64b87c&amp;schema=twitter&amp;url=https%3A//twitter.com/snowden/status/778588715736260608&amp;image=https%3A//i.embed.ly/1/image%3Furl%3Dhttps%253A%252F%252Fpbs.twimg.com%252Fprofile_images%252F648888480974508032%252F66_cUYfj_bigger.jpg%26key%3D4fce0568f2ce49e8b54624ef71a8a5bd" allowfullscreen="" height="185" width="500"></iframe></figure>
+
+
+
+<figure><iframe src="https://medium.com/media/b450e333943ab22955fc32cf170643a3" allowfullscreen="" height="0" width="0"></iframe><figcaption>Snowden warned users as soon as Allo launched without its privacy features.</figcaption></figure>
+
+
+
+<figure><iframe src="https://medium.com/media/c5842c4814d33bfd2d90e8517f3b9e49" allowfullscreen="" height="0" width="0"></iframe><figcaption>A user’s reaction on privacy issue in Google Allo</figcaption></figure>
+
+
+
+<p>Though Google has already updated its Terms &amp; Conditions and clearly mentioned the change, But it would be much of a show how Google responds to these tweets.</p>
+<p>The post <a rel="nofollow" href="./../../../google-allo-is-it-a-new-way-to-hack-into-peoples-life/index.html">Google Allo : Is it a new way to hack into people’s life?</a> appeared first on <a rel="nofollow" href="./../../../index.html">Rutvik Bhatt</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../google-allo-is-it-a-new-way-to-hack-into-peoples-life/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">4985</post-id>	</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 59/64 objects using disk
+Page Caching using disk 
+Content Delivery Network via N/A
+Minified using disk
+Database Caching 5/17 queries in 0.005 seconds using disk
+
+Served from: rutvikbhatt.com @ 2023-10-07 16:36:44 by W3 Total Cache
+-->
